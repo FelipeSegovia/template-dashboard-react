@@ -23,26 +23,26 @@ const plop_library = (plop) => {
     actions: function (data) {
       var actions = [];
 
-      if (data.type !== "Template" || data.type !== "Page") {
+      if (data.type !== "Template" && data.type !== "Page") {
         actions = [
           {
             type: "add",
-            path: "src/components/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.tsx",
+            path: "src/components/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.tsx",
             templateFile: "plop/templates/components/component.hbs",
           },
           {
             type: "add",
-            path: "src/components/{{lowerCase type}}s/{{properCase name}}/index.ts",
+            path: "src/components/{{camelCase type}}s/{{properCase name}}/index.ts",
             templateFile: "plop/templates/components/index.hbs",
           },
           {
             type: "add",
-            path: "src/components/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.test.tsx",
+            path: "src/components/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.test.tsx",
             templateFile: "plop/templates/components/test.hbs",
           },
           {
             type: "add",
-            path: "src/components/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.stories.tsx",
+            path: "src/components/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.stories.tsx",
             templateFile: "plop/templates/components/stories.hbs",
           },
         ];
@@ -50,22 +50,22 @@ const plop_library = (plop) => {
         actions = [
           {
             type: "add",
-            path: "src/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.tsx",
+            path: "src/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.tsx",
             templateFile: "plop/templates/components/component.hbs",
           },
           {
             type: "add",
-            path: "src/{{lowerCase type}}s/{{properCase name}}/index.ts",
+            path: "src/{{camelCase type}}s/{{properCase name}}/index.ts",
             templateFile: "plop/templates/components/index.hbs",
           },
           {
             type: "add",
-            path: "src/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.test.tsx",
+            path: "src/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.test.tsx",
             templateFile: "plop/templates/components/test.hbs",
           },
           {
             type: "add",
-            path: "src/{{lowerCase type}}s/{{properCase name}}/{{properCase name}}.stories.tsx",
+            path: "src/{{camelCase type}}s/{{properCase name}}/{{properCase name}}.stories.tsx",
             templateFile: "plop/templates/components/stories.hbs",
           },
         ];
