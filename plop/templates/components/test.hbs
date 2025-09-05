@@ -1,0 +1,15 @@
+import { describe, it, expect } from 'vitest'
+import { render } from '@testing-library/react'
+import {{properCase name}} from './{{properCase name}}'
+
+describe('{{properCase name}}', () => {
+  it('renders without crashing', () => {
+    const { container } = render(<{{properCase name}} />)
+    expect(container).toBeInTheDocument()
+  })
+
+  it('matches snapshot', () => {
+    const { asFragment } = render(<{{properCase name}} />)
+    expect(asFragment()).toMatchSnapshot()
+  })
+})

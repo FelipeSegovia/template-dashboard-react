@@ -1,0 +1,23 @@
+import type { ComponentProps } from 'react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import {{properCase name}} from './{{properCase name}}'
+
+type StoryProps = ComponentProps<typeof {{properCase name}}>
+
+const meta: Meta<typeof {{properCase name}}> = {
+  title: '{{properCase type}}s/{{properCase name}}',
+  component: {{properCase name}},
+  argTypes: {
+    // Add your argTypes here
+  },
+} satisfies Meta<StoryProps>
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    // Add your default args here
+  },
+}
