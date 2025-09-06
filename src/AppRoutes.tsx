@@ -1,13 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router";
+import LoginPage from "./pages/LoginPage";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          index
-          element={<h1 className="text-3xl font-bold underline">Home</h1>}
-        />
+        <Route index element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
